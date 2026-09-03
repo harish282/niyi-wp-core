@@ -12,12 +12,12 @@ declare( strict_types=1 );
 
 namespace NiyiWPCore\Core;
 
+use NiyiWPCore\Core\Bootstrap\LifecycleManager;
+use NiyiWPCore\Core\Bootstrap\LifecycleState;
 use NiyiWPCore\Core\Container\Container;
 use NiyiWPCore\Core\Container\ContainerInterface;
 use NiyiWPCore\Core\CoreServiceProvider;
 use NiyiWPCore\Core\Settings\Settings;
-use NiyiWooSmartUpsells\Bootstrap\LifecycleManager;
-use NiyiWooSmartUpsells\Bootstrap\LifecycleState;
 use NiyiWPCore\Core\Notifications\NotificationManagerInterface;
 use NiyiWPCore\Core\Settings\SettingsInterface;
 

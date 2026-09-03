@@ -27,9 +27,9 @@ class LoggingServiceProvider extends AbstractServiceProvider {
 	 * @return void
 	 */
 	public function register(): void {
-		if ( ! $this->container->has( \NiyiWooSmartUpsells\Contracts\LoggerInterface::class ) ) {
+		if ( ! $this->container->has( LoggerInterface::class ) ) {
 			$this->container->singleton(
-				\NiyiWooSmartUpsells\Contracts\LoggerInterface::class,
+				LoggerInterface::class,
 				fn() => new Logger()
 			);
 		}

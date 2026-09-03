@@ -12,7 +12,7 @@ declare( strict_types=1 );
 
 namespace NiyiWPCore\Core\Logging;
 
-use NiyiWooSmartUpsells\Contracts\LoggerInterface;
+use NiyiWPCore\Core\Logging\LoggerInterface;
 
 /**
  * Basic error_log-backed logger.

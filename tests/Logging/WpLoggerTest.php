@@ -9,7 +9,7 @@ declare( strict_types=1 );
 
 namespace NiyiWPCore\Tests\Logging;
 
-use NiyiWooSmartUpsells\Helpers\WpLogger;
+use NiyiWPCore\Core\Logging\WpLogger;
 use NiyiWPCore\Tests\TestCase;
 
 /**
@@ -111,14 +111,14 @@ class WpLoggerTest extends TestCase {
 
 		$content = $this->read_log();
 
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] EMERGENCY: Emergency message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] ALERT: Alert message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] CRITICAL: Critical message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] ERROR: Error message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] WARNING: Warning message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] NOTICE: Notice message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] INFO: Info message', $content );
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] DEBUG: Debug message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] EMERGENCY: Emergency message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] ALERT: Alert message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] CRITICAL: Critical message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] ERROR: Error message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] WARNING: Warning message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] NOTICE: Notice message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] INFO: Info message', $content );
+		$this->assertStringContainsString( '[niyi-wp-core] DEBUG: Debug message', $content );
 	}
 
 	/**
@@ -129,7 +129,7 @@ class WpLoggerTest extends TestCase {
 	public function test_log_writes_a_dynamic_level(): void {
 		$this->logger->log( 'custom', 'Custom level message' );
 
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] CUSTOM: Custom level message', $this->read_log() );
+		$this->assertStringContainsString( '[niyi-wp-core] CUSTOM: Custom level message', $this->read_log() );
 	}
 
 	/**
@@ -140,7 +140,7 @@ class WpLoggerTest extends TestCase {
 	public function test_context_is_appended_as_json(): void {
 		$this->logger->info( 'Message with context', array( 'key' => 'value' ) );
 
-		$this->assertStringContainsString( '[niyi-woo-smart-upsells] INFO: Message with context {"key":"value"}', $this->read_log() );
+		$this->assertStringContainsString( '[niyi-wp-core] INFO: Message with context {"key":"value"}', $this->read_log() );
 	}
 
 	/**
@@ -158,7 +158,7 @@ class WpLoggerTest extends TestCase {
 		$this->assertCount( 2, $wc_logger->calls );
 		$this->assertSame( 'info', $wc_logger->calls[0]['level'] );
 		$this->assertSame( 'error', $wc_logger->calls[1]['level'] );
-		$this->assertSame( array( 'source' => 'niyi-woo-smart-upsells' ), $wc_logger->calls[0]['context'] );
+		$this->assertSame( array( 'source' => 'niyi-wp-core' ), $wc_logger->calls[0]['context'] );
 		$this->assertSame( '', $this->read_log() );
 	}
 

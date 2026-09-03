@@ -13,8 +13,8 @@ declare( strict_types=1 );
 
 namespace NiyiWPCore\Core\Scheduler;
 
-use NiyiWooSmartUpsells\Contracts\LoggerInterface;
-use NiyiWooSmartUpsells\Helpers\WpLogger;
+use NiyiWPCore\Core\Logging\LoggerInterface;
+use NiyiWPCore\Core\Logging\WpLogger;
 
 /**
  * Wraps the WordPress Cron API.

@@ -18,6 +18,6 @@ class Log extends Facade {
 	 * {@inheritdoc}
 	 */
 	protected static function getFacadeAccessor(): string {
-		return \NiyiWooSmartUpsells\Contracts\LoggerInterface::class;
+		return \NiyiWPCore\Core\Logging\LoggerInterface::class;
 	}
 }

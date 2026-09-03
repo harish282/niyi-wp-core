@@ -11,7 +11,7 @@ declare( strict_types=1 );
 
 namespace NiyiWPCore\Core\Facade;
 
-use NiyiWooSmartUpsells\Bootstrap\Plugin;
+use NiyiWPCore\Core\Plugin;
 
 /**
  * Abstract base facade.
