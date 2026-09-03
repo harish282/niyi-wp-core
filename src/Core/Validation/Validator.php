@@ -6,14 +6,14 @@
  * validation functions. Returns structured results instead of throwing
  * exceptions on validation failure.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Validation;
+namespace NiyiWPCore\Core\Validation;
 
-use NiyiWooSmartUpsells\Core\Validation\ValidationResult;
+use NiyiWPCore\Core\Validation\ValidationResult;
 
 /**
  * Validates and sanitizes input data.

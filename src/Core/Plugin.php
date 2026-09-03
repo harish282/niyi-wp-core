@@ -5,21 +5,21 @@
  * Encapsulates core service initialization: container, settings, notifications,
  * and lifecycle. Framework-agnostic; no WordPress hook registration here.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core;
+namespace NiyiWPCore\Core;
 
-use NiyiWooSmartUpsells\Core\Container\Container;
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\CoreServiceProvider;
-use NiyiWooSmartUpsells\Core\Settings\Settings;
+use NiyiWPCore\Core\Container\Container;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\CoreServiceProvider;
+use NiyiWPCore\Core\Settings\Settings;
 use NiyiWooSmartUpsells\Bootstrap\LifecycleManager;
 use NiyiWooSmartUpsells\Bootstrap\LifecycleState;
-use NiyiWooSmartUpsells\Core\Notifications\NotificationManagerInterface;
-use NiyiWooSmartUpsells\Core\Settings\SettingsInterface;
+use NiyiWPCore\Core\Notifications\NotificationManagerInterface;
+use NiyiWPCore\Core\Settings\SettingsInterface;
 
 /**
  * Core plugin base class.

@@ -2,12 +2,12 @@
 /**
  * Supported log levels.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Logging;
+namespace NiyiWPCore\Core\Logging;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

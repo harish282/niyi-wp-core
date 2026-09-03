@@ -31,23 +31,23 @@ All core services are registered as singletons through `CoreServiceProvider` and
 ```php
 /** @var ContainerInterface $container */
 
-$settings = $container->get( \NiyiWooSmartUpsells\Core\Settings\SettingsInterface::class );
+$settings = $container->get( \NiyiWPCore\Core\Settings\SettingsInterface::class );
 $settings->set( 'provider', 'ollama' )->save();
 
-$logger = $container->get( \NiyiWooSmartUpsells\Contracts\LoggerInterface::class );
+$logger = $container->get( \NiyiWPCore\Contracts\LoggerInterface::class );
 $logger->info( 'Settings saved.', array( 'provider' => 'ollama' ) );
 
-$hooks = $container->get( \NiyiWooSmartUpsells\Core\Hooks\HookManagerInterface::class );
+$hooks = $container->get( \NiyiWPCore\Core\Hooks\HookManagerInterface::class );
 $hooks->action( 'init', [ $this, 'boot' ] );
 
-$assets = $container->get( \NiyiWooSmartUpsells\Core\Assets\AssetManagerInterface::class );
+$assets = $container->get( \NiyiWPCore\Core\Assets\AssetManagerInterface::class );
 $assets->register_script( 'my-script', $assets->asset_url( 'js/admin.js' ), array( 'jquery' ) );
 ```
 
 ### Event dispatching
 
 ```php
-$dispatcher = $container->get( \NiyiWooSmartUpsells\Core\Events\EventDispatcherInterface::class );
+$dispatcher = $container->get( \NiyiWPCore\Core\Events\EventDispatcherInterface::class );
 
 $dispatcher->listen( \MyPlugin\Events\ProductSaved::class, function ( $event ) {
     // Handle event.
@@ -59,19 +59,19 @@ $dispatcher->dispatch( new \MyPlugin\Events\ProductSaved( $product_id ) );
 ### Queueing jobs
 
 ```php
-$queue = $container->get( \NiyiWooSmartUpsells\Core\Queue\QueueInterface::class );
+$queue = $container->get( \NiyiWPCore\Core\Queue\QueueInterface::class );
 
 $queue->dispatch( new \MyPlugin\Jobs\GenerateRecommendations( $product_id ) );
 $queue->dispatchLater( new \MyPlugin\Jobs\CleanupLogs(), 300 );
 
-$worker = $container->get( \NiyiWooSmartUpsells\Core\Queue\QueueWorker::class );
+$worker = $container->get( \NiyiWPCore\Core\Queue\QueueWorker::class );
 $worker->process( $queue );
 ```
 
 ### Validating input
 
 ```php
-$validator = $container->get( \NiyiWooSmartUpsells\Core\Validation\ValidatorInterface::class );
+$validator = $container->get( \NiyiWPCore\Core\Validation\ValidatorInterface::class );
 
 $result = $validator->validate( $input, array(
     'provider'   => 'required|string',
@@ -89,7 +89,7 @@ $validated = $result->validated();
 ### Notifications
 
 ```php
-$notifications = $container->get( \NiyiWooSmartUpsells\Core\Notifications\NotificationManagerInterface::class );
+$notifications = $container->get( \NiyiWPCore\Core\Notifications\NotificationManagerInterface::class );
 
 $notifications->success( 'Recommendations generated successfully.' );
 $notifications->error( 'Unable to connect to AI provider.' );
@@ -100,18 +100,18 @@ $notifications->error( 'Unable to connect to AI provider.' );
 Core provides static Facade classes for simplified access to services:
 
 ```php
-use NiyiWooSmartUpsells\Core\Facade\View;
-use NiyiWooSmartUpsells\Core\Facade\Config;
-use NiyiWooSmartUpsells\Core\Facade\Log;
-use NiyiWooSmartUpsells\Core\Facade\Hooks;
-use NiyiWooSmartUpsells\Core\Facade\Notifications;
-use NiyiWooSmartUpsells\Core\Facade\Queue;
-use NiyiWooSmartUpsells\Core\Facade\Cache;
-use NiyiWooSmartUpsells\Core\Facade\Events;
-use NiyiWooSmartUpsells\Core\Facade\Http;
-use NiyiWooSmartUpsells\Core\Facade\Scheduler;
-use NiyiWooSmartUpsells\Core\Facade\Assets;
-use NiyiWooSmartUpsells\Core\Facade\Validation;
+use NiyiWPCore\Core\Facade\View;
+use NiyiWPCore\Core\Facade\Config;
+use NiyiWPCore\Core\Facade\Log;
+use NiyiWPCore\Core\Facade\Hooks;
+use NiyiWPCore\Core\Facade\Notifications;
+use NiyiWPCore\Core\Facade\Queue;
+use NiyiWPCore\Core\Facade\Cache;
+use NiyiWPCore\Core\Facade\Events;
+use NiyiWPCore\Core\Facade\Http;
+use NiyiWPCore\Core\Facade\Scheduler;
+use NiyiWPCore\Core\Facade\Assets;
+use NiyiWPCore\Core\Facade\Validation;
 
 // Views
 View::render( 'Admin.Settings.index', array( 'settings' => $settings ) );
@@ -190,9 +190,9 @@ Every plugin using Core must create a Bootstrap Plugin that extends Core\Plugin:
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Bootstrap;
+namespace NiyiWPCore\Bootstrap;
 
-use NiyiWooSmartUpsells\Core\Plugin as CorePlugin;
+use NiyiWPCore\Core\Plugin as CorePlugin;
 
 class Plugin extends CorePlugin {
     // Add your plugin-specific bootstrap logic here
@@ -203,7 +203,7 @@ class Plugin extends CorePlugin {
 **Required bootstrap sequence:**
 
 ```php
-$plugin = new \NiyiWooSmartUpsells\Bootstrap\Plugin();
+$plugin = new \NiyiWPCore\Bootstrap\Plugin();
 $plugin->init();
 ```
 

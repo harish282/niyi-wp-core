@@ -6,12 +6,12 @@
  * WordPress Options API. Framework-agnostic except for delegating to
  * WordPress functions internally.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Settings;
+namespace NiyiWPCore\Core\Settings;
 
 /**
  * Contract for settings services.

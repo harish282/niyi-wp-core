@@ -4,16 +4,16 @@
  *
  * Registers the validator into the container as a singleton.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Validation;
+namespace NiyiWPCore\Core\Validation;
 
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\Contracts\ServiceProviderInterface;
-use NiyiWooSmartUpsells\Core\Providers\AbstractServiceProvider;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\Contracts\ServiceProviderInterface;
+use NiyiWPCore\Core\Providers\AbstractServiceProvider;
 
 /**
  * Registers the validator.

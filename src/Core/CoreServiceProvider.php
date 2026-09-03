@@ -5,26 +5,26 @@
  * Centralizes registration of all core subsystem providers so the bootstrap
  * and future plugins do not need to register each provider manually.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core;
+namespace NiyiWPCore\Core;
 
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\Cache\CacheServiceProvider;
-use NiyiWooSmartUpsells\Core\Events\EventServiceProvider;
-use NiyiWooSmartUpsells\Core\HTTP\HTTPServiceProvider;
-use NiyiWooSmartUpsells\Core\Hooks\HookServiceProvider;
-use NiyiWooSmartUpsells\Core\Logging\LoggingServiceProvider;
-use NiyiWooSmartUpsells\Core\Queue\QueueServiceProvider;
-use NiyiWooSmartUpsells\Core\Scheduler\SchedulerServiceProvider;
-use NiyiWooSmartUpsells\Core\Settings\SettingsServiceProvider;
-use NiyiWooSmartUpsells\Core\Assets\AssetServiceProvider;
-use NiyiWooSmartUpsells\Core\Validation\ValidationServiceProvider;
-use NiyiWooSmartUpsells\Core\Notifications\NotificationServiceProvider;
-use NiyiWooSmartUpsells\Core\View\ViewServiceProvider;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\Cache\CacheServiceProvider;
+use NiyiWPCore\Core\Events\EventServiceProvider;
+use NiyiWPCore\Core\HTTP\HTTPServiceProvider;
+use NiyiWPCore\Core\Hooks\HookServiceProvider;
+use NiyiWPCore\Core\Logging\LoggingServiceProvider;
+use NiyiWPCore\Core\Queue\QueueServiceProvider;
+use NiyiWPCore\Core\Scheduler\SchedulerServiceProvider;
+use NiyiWPCore\Core\Settings\SettingsServiceProvider;
+use NiyiWPCore\Core\Assets\AssetServiceProvider;
+use NiyiWPCore\Core\Validation\ValidationServiceProvider;
+use NiyiWPCore\Core\Notifications\NotificationServiceProvider;
+use NiyiWPCore\Core\View\ViewServiceProvider;
 
 /**
  * Registers all core service providers.

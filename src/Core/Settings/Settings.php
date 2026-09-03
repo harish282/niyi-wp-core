@@ -6,14 +6,14 @@
  * WordPress option. Settings are cached in memory for the current request
  * and persisted via `save()`.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Settings;
+namespace NiyiWPCore\Core\Settings;
 
-use NiyiWooSmartUpsells\Core\Settings\SettingsException;
+use NiyiWPCore\Core\Settings\SettingsException;
 
 /**
  * Wraps the WordPress Options API for plugin settings.

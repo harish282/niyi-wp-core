@@ -6,12 +6,12 @@
  * framework-agnostic services can type-hint the core logging interface while
  * remaining compatible with any implementation.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Logging;
+namespace NiyiWPCore\Core\Logging;
 
 /**
  * Contract for core logging services.

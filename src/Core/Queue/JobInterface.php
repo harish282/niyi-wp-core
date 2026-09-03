@@ -4,12 +4,12 @@
  *
  * Represents a unit of work that can be queued and processed asynchronously.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
 /**
  * Contract for queued jobs.

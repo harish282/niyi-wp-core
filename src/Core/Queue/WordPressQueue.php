@@ -6,14 +6,14 @@
  * Stores jobs in a custom table and provides methods for dispatching,
  * releasing, deleting, failing, and counting jobs.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare(strict_types=1);
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
-use NiyiWooSmartUpsells\Core\Queue\QueueInterface;
+use NiyiWPCore\Core\Queue\QueueInterface;
 
 /**
  * Queue implementation backed by a WordPress custom table.

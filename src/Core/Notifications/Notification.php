@@ -4,12 +4,12 @@
  *
  * Represents a single notification message with type and content.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Notifications;
+namespace NiyiWPCore\Core\Notifications;
 
 /**
  * Represents a notification message.

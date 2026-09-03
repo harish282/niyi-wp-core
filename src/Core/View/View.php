@@ -6,12 +6,12 @@
  * PHP templates. No template engine—just plain PHP with standard WordPress
  * escaping functions.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\View;
+namespace NiyiWPCore\Core\View;
 
 /**
  * Renders PHP view files.

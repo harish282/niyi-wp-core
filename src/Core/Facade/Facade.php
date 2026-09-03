@@ -4,12 +4,12 @@
  *
  * Provides static proxy access to services registered in the container.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
 use NiyiWooSmartUpsells\Bootstrap\Plugin;
 

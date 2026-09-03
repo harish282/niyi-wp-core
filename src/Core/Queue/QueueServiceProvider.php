@@ -4,16 +4,16 @@
  *
  * Registers the queue and worker into the container as singletons.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\Contracts\ServiceProviderInterface;
-use NiyiWooSmartUpsells\Core\Providers\AbstractServiceProvider;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\Contracts\ServiceProviderInterface;
+use NiyiWPCore\Core\Providers\AbstractServiceProvider;
 
 /**
  * Registers the queue service.

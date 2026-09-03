@@ -6,12 +6,12 @@
  * is missing, the factory returns an unusable value, or the identifier is
  * invalid. Framework-agnostic — it must not depend on WordPress.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Container\Exceptions;
+namespace NiyiWPCore\Core\Container\Exceptions;
 
 use Throwable;
 

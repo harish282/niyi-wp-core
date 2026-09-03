@@ -8,14 +8,14 @@
  * (`instance`) registrations. Framework-agnostic: it must not depend on
  * WordPress.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Container;
+namespace NiyiWPCore\Core\Container;
 
-use NiyiWooSmartUpsells\Core\Container\Exceptions\ContainerException;
+use NiyiWPCore\Core\Container\Exceptions\ContainerException;
 
 /**
  * Stores service registrations and resolves them when requested.

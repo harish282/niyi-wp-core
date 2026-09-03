@@ -5,12 +5,12 @@
  * Defines the public API for registering and enqueueing scripts and styles
  * using the WordPress Assets API.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Assets;
+namespace NiyiWPCore\Core\Assets;
 
 /**
  * Contract for asset managers.

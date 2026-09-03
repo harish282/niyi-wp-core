@@ -2,14 +2,14 @@
 /**
  * Validation facade.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
-use NiyiWooSmartUpsells\Core\Validation\ValidatorInterface;
+use NiyiWPCore\Core\Validation\ValidatorInterface;
 
 /**
  * Static proxy for ValidatorInterface.

@@ -2,14 +2,14 @@
 /**
  * HTTP facade.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
-use NiyiWooSmartUpsells\Core\HTTP\HTTPClientInterface;
+use NiyiWPCore\Core\HTTP\HTTPClientInterface;
 
 /**
  * Static proxy for HTTPClientInterface.

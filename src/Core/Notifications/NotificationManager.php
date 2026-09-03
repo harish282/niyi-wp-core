@@ -6,14 +6,14 @@
  * Supports success, warning, error, and info types. Notices can be queued
  * for the next request using WordPress options.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Notifications;
+namespace NiyiWPCore\Core\Notifications;
 
-use NiyiWooSmartUpsells\Core\Notifications\Notification;
+use NiyiWPCore\Core\Notifications\Notification;
 
 /**
  * Displays WordPress admin notifications.

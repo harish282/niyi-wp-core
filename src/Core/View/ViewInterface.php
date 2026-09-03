@@ -4,12 +4,12 @@
  *
  * Defines the public API for rendering PHP templates.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\View;
+namespace NiyiWPCore\Core\View;
 
 /**
  * Contract for view services.

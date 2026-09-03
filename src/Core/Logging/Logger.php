@@ -5,12 +5,12 @@
  * Writes log entries using PHP's error_log. Intentionally lightweight; future
  * versions may support file, database, or external logging destinations.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Logging;
+namespace NiyiWPCore\Core\Logging;
 
 use NiyiWooSmartUpsells\Contracts\LoggerInterface;
 

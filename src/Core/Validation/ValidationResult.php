@@ -4,12 +4,12 @@
  *
  * Holds the outcome of a validation pass, including errors and sanitized data.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Validation;
+namespace NiyiWPCore\Core\Validation;
 
 /**
  * Represents the outcome of a validation pass.

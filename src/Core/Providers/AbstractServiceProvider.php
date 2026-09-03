@@ -5,15 +5,15 @@
  * Provides a base implementation for service providers, including
  * container access for registering services.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Providers;
+namespace NiyiWPCore\Core\Providers;
 
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\Contracts\ServiceProviderInterface;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\Contracts\ServiceProviderInterface;
 
 /**
  * Abstract base class for service providers.

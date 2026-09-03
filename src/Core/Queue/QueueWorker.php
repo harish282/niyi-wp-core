@@ -5,12 +5,12 @@
  * Processes pending jobs from the queue. Intentionally lightweight;
  * future versions may add concurrency, timeouts, and progress reporting.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
 use NiyiWooSmartUpsells\Contracts\LoggerInterface;
 use NiyiWooSmartUpsells\Helpers\WpLogger;

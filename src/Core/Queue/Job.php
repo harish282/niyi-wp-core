@@ -4,12 +4,12 @@
  *
  * Provides a default implementation for JobInterface with a UUID-based job ID.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
 /**
  * Base queued job.

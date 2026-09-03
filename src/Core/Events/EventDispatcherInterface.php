@@ -5,12 +5,12 @@
  * Defines the interface for registering listeners and dispatching events
  * across modules without direct coupling.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Events;
+namespace NiyiWPCore\Core\Events;
 
 /**
  * Contract for event dispatchers.

@@ -6,14 +6,14 @@
  * object-oriented interface. Returns framework-agnostic response objects
  * and throws exceptions on transport errors.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\HTTP;
+namespace NiyiWPCore\Core\HTTP;
 
-use NiyiWooSmartUpsells\Core\HTTP\HTTPResponse;
+use NiyiWPCore\Core\HTTP\HTTPResponse;
 
 /**
  * WordPress HTTP API wrapper.

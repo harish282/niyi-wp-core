@@ -6,14 +6,14 @@
  * Automatically applies plugin version and generates asset URLs from the
  * plugin directory.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Assets;
+namespace NiyiWPCore\Core\Assets;
 
-use NiyiWooSmartUpsells\Core\Assets\AssetManagerInterface;
+use NiyiWPCore\Core\Assets\AssetManagerInterface;
 
 /**
  * Wraps the WordPress Assets API.

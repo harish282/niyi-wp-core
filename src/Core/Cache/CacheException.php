@@ -4,12 +4,12 @@
  *
  * Thrown when a cache operation cannot be completed.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Cache;
+namespace NiyiWPCore\Core\Cache;
 
 /**
  * Exception thrown for cache errors.

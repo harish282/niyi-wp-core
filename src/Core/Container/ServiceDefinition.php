@@ -6,12 +6,12 @@
  * singleton, and the cached instance once resolved. Kept deliberately small —
  * the container owns the storage and resolution flow.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Container;
+namespace NiyiWPCore\Core\Container;
 
 /**
  * Describes one registered service.

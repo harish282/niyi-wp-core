@@ -5,12 +5,12 @@
  * Defines the interface that all service providers must implement to
  * register and bootstrap services in the container.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Contracts;
+namespace NiyiWPCore\Core\Contracts;
 
 /**
  * Contract for service providers.

@@ -2,12 +2,12 @@
 /**
  * Notifications facade.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
 /**
  * Static proxy for NotificationManagerInterface.
@@ -18,6 +18,6 @@ class Notifications extends Facade {
 	 * {@inheritdoc}
 	 */
 	protected static function getFacadeAccessor(): string {
-		return \NiyiWooSmartUpsells\Core\Notifications\NotificationManagerInterface::class;
+		return \NiyiWPCore\Core\Notifications\NotificationManagerInterface::class;
 	}
 }

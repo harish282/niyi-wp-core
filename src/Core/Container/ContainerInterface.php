@@ -5,14 +5,14 @@
  * Defines the small, predictable surface the plugin uses to register and
  * resolve services. Concrete implementations must stay framework-agnostic.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Container;
+namespace NiyiWPCore\Core\Container;
 
-use NiyiWooSmartUpsells\Core\Container\Exceptions\ContainerException;
+use NiyiWPCore\Core\Container\Exceptions\ContainerException;
 
 /**
  * Contract for the dependency-injection container.

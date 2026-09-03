@@ -6,12 +6,12 @@
  * the WordPress Cron API. Prevents duplicate scheduling and normalizes
  * arguments.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Scheduler;
+namespace NiyiWPCore\Core\Scheduler;
 
 use NiyiWooSmartUpsells\Contracts\LoggerInterface;
 use NiyiWooSmartUpsells\Helpers\WpLogger;

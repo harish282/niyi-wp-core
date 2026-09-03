@@ -6,12 +6,12 @@
  * system. Implementations hide the underlying storage mechanism from
  * application code.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Cache;
+namespace NiyiWPCore\Core\Cache;
 
 /**
  * Contract for cache services.

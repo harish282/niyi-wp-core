@@ -4,12 +4,12 @@
  *
  * Value object that represents a single cache entry.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Cache;
+namespace NiyiWPCore\Core\Cache;
 
 /**
  * Represents a cache entry.

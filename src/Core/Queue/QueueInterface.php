@@ -4,14 +4,14 @@
  *
  * Defines the public API for dispatching and processing background jobs.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
-use NiyiWooSmartUpsells\Core\Queue\JobInterface;
+use NiyiWPCore\Core\Queue\JobInterface;
 
 /**
  * Contract for queue services.

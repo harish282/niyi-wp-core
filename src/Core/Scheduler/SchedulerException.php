@@ -4,12 +4,12 @@
  *
  * Thrown when a scheduling operation cannot be completed.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Scheduler;
+namespace NiyiWPCore\Core\Scheduler;
 
 /**
  * Exception thrown for scheduler errors.

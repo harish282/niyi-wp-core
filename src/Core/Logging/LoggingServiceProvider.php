@@ -5,16 +5,16 @@
  * Registers the core logger service into the container as a singleton if no
  * other logger has been registered already.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Logging;
+namespace NiyiWPCore\Core\Logging;
 
-use NiyiWooSmartUpsells\Core\Container\ContainerInterface;
-use NiyiWooSmartUpsells\Core\Contracts\ServiceProviderInterface;
-use NiyiWooSmartUpsells\Core\Providers\AbstractServiceProvider;
+use NiyiWPCore\Core\Container\ContainerInterface;
+use NiyiWPCore\Core\Contracts\ServiceProviderInterface;
+use NiyiWPCore\Core\Providers\AbstractServiceProvider;
 
 /**
  * Registers the logging service.

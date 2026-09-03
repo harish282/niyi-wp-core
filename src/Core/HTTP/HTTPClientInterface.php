@@ -6,14 +6,14 @@
  * must remain framework-agnostic except for delegating to the WordPress HTTP
  * API internally.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\HTTP;
+namespace NiyiWPCore\Core\HTTP;
 
-use NiyiWooSmartUpsells\Core\HTTP\HTTPResponse;
+use NiyiWPCore\Core\HTTP\HTTPResponse;
 
 /**
  * Contract for HTTP clients.

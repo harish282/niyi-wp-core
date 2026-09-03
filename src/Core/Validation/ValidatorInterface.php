@@ -4,12 +4,12 @@
  *
  * Defines the public API for validating and sanitizing data.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Validation;
+namespace NiyiWPCore\Core\Validation;
 
 /**
  * Contract for validators.

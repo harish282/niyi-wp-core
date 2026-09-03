@@ -5,12 +5,12 @@
  * Normalizes WordPress HTTP API responses into a consistent, framework-agnostic
  * object. Avoids leaking raw WordPress arrays outside this layer.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\HTTP;
+namespace NiyiWPCore\Core\HTTP;
 
 /**
  * Lightweight HTTP response object.

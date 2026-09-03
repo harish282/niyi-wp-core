@@ -4,12 +4,12 @@
  *
  * Thrown when a settings operation cannot be completed.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Settings;
+namespace NiyiWPCore\Core\Settings;
 
 /**
  * Exception thrown for settings errors.

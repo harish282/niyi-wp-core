@@ -5,14 +5,14 @@
  * Implement this interface to create typed listeners that handle specific
  * event classes.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Events;
+namespace NiyiWPCore\Core\Events;
 
-use NiyiWooSmartUpsells\Core\Events\Event;
+use NiyiWPCore\Core\Events\Event;
 
 /**
  * Contract for event listeners.

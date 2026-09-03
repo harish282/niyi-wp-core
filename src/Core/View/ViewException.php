@@ -4,12 +4,12 @@
  *
  * Thrown when a view cannot be found or rendered.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\View;
+namespace NiyiWPCore\Core\View;
 
 /**
  * Exception thrown for view errors.

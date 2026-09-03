@@ -2,12 +2,12 @@
 /**
  * Logger facade.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
 /**
  * Static proxy for LoggerInterface.

@@ -6,12 +6,12 @@
  * the WordPress Cron API. Framework-agnostic except for delegating to
  * WordPress cron functions internally.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Scheduler;
+namespace NiyiWPCore\Core\Scheduler;
 
 /**
  * Contract for scheduler services.

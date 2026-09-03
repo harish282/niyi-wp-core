@@ -4,12 +4,12 @@
  *
  * Defines the public API for displaying WordPress notifications.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Notifications;
+namespace NiyiWPCore\Core\Notifications;
 
 /**
  * Contract for notification managers.

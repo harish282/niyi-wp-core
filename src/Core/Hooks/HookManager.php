@@ -6,12 +6,12 @@
  * Hooks API. Keeps WordPress interaction inside Core and enables dependency
  * injection for testability.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Hooks;
+namespace NiyiWPCore\Core\Hooks;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

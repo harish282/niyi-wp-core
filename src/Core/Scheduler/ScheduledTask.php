@@ -4,12 +4,12 @@
  *
  * Value object that represents a task registered with the scheduler.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Scheduler;
+namespace NiyiWPCore\Core\Scheduler;
 
 /**
  * Represents a scheduled task.

@@ -2,14 +2,14 @@
 /**
  * Scheduler facade.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Facade;
+namespace NiyiWPCore\Core\Facade;
 
-use NiyiWooSmartUpsells\Core\Scheduler\SchedulerInterface;
+use NiyiWPCore\Core\Scheduler\SchedulerInterface;
 
 /**
  * Static proxy for SchedulerInterface.

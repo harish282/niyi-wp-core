@@ -5,12 +5,12 @@
  * Extend this class to create typed events that carry data about something
  * that happened in the application.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Events;
+namespace NiyiWPCore\Core\Events;
 
 /**
  * Base event object.

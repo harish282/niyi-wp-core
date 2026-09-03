@@ -5,14 +5,14 @@
  * Owns the queue table schema, creation, and cleanup. Keeps queue-specific
  * database logic inside the Queue subsystem instead of the global Installer.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
 // phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange, WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQL.NotPrepared, WordPress.DB.PreparedSQLPlaceholders.ReplacementsWrongNumber, WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare, PluginCheck.Security.DirectDB -- Queue schema operations: table names derive from $wpdb->prefix.
 
-namespace NiyiWooSmartUpsells\Core\Queue;
+namespace NiyiWPCore\Core\Queue;
 
 use NiyiWooSmartUpsells\Contracts\LoggerInterface;
 use NiyiWooSmartUpsells\Helpers\WpLogger;

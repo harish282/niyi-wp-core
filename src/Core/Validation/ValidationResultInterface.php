@@ -2,12 +2,12 @@
 /**
  * Validation result contract.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Validation;
+namespace NiyiWPCore\Core\Validation;
 
 /**
  * Contract for validation results.

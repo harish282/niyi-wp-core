@@ -5,12 +5,12 @@
  * Defines the public API for registering and removing WordPress hooks
  * through a consistent, object-oriented interface.
  *
- * @package NiyiWooSmartUpsells
+ * @package NiyiWPCore
  */
 
 declare( strict_types=1 );
 
-namespace NiyiWooSmartUpsells\Core\Hooks;
+namespace NiyiWPCore\Core\Hooks;
 
 /**
  * Contract for hook managers.
